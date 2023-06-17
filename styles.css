@@ -1,0 +1,26 @@
+/*General styles*/
+* {
+    margin: 15px;
+    text-align: start;
+    color: rgb(32, 14, 1);
+}
+
+body {
+    background-color: rgba(255, 235, 205, 0.282);
+}
+
+.contactInfo {
+/*Add the code for contact info*/
+}
+
+.introAndSkillsSection {
+    /*add the code for intro and skills section*/
+}
+
+.experienceSection {
+/*add the code for experience section*/
+}
+
+.additionalInfoSection {
+    /*code for additional info section*/
+}
