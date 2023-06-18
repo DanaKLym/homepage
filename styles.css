@@ -20,13 +20,16 @@ body {
 h2 {
     max-width: fit-content;
     padding: 10px;
-    background-color: rgb(19, 19, 19);
+    background-color: rgba(19, 19, 19, 0.779);
     font-size: 32px;
     color: var(--default-color);
 }
 
 h3 {
     font-size: 24px;
+    background-color:  rgba(0, 174, 238, 0.379);
+    width: fit-content;
+    padding: 5px;
 }
 
 p {
@@ -68,7 +71,7 @@ p {
     margin: 32px;
 }
 
-.contactInfo li, .hardSkillsSection li, .languageProficiency li, .softSkillsSection li{
+.contactInfo li, .hardSkillsSection li, .languageProficiency li, .softSkillsSection li, .certificates{
     list-style-type: "\1F343";
 }
 
@@ -93,6 +96,15 @@ p {
 
 .experienceSection .timeline{
     color: rgba(0, 0, 0, 0.5);
+}
+
+.certificates  a{
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.certificates  a:hover {
+    text-shadow: var(--shadow);
 }
 
 .additionalInfoSection {
