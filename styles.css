@@ -29,6 +29,11 @@ h2 {
 p {
     font-size: 18px;
 }
+
+.photoAndName, .contactInfo, .introSection, .skillsSection {
+    margin-bottom: 50px;
+}
+
 .photoAndName {
     display: flex;
     align-items: center;
@@ -55,7 +60,7 @@ p {
     color: var(--default-color);
 }
 
-.contactInfo li{
+.contactInfo li, .skillsSection li{
     list-style-type: "\1F343";
 }
 
@@ -73,12 +78,6 @@ p {
     color: rgb(255, 199, 18);
 }
 
-
-.introSection {
-   
-}
-
-.skillsSection
 
 .experienceSection {
 /*add the code for experience section*/
