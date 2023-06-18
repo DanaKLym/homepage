@@ -20,7 +20,7 @@ body {
 h2 {
     max-width: fit-content;
     padding: 10px;
-    background-color: rgba(19, 19, 19, 0.779);
+    background-color: rgba(19, 19, 19, 0.85);
     font-size: 32px;
     color: var(--default-color);
 }
@@ -107,7 +107,18 @@ p {
     text-shadow: var(--shadow);
 }
 
-.additionalInfoSection {
-    /*code for additional info section*/
+.additionalInfoSection a > button {
+    font-size: 34px;
+    background-color: rgb(240, 248, 255);
+    border: 1px solid rgba(0, 174, 238, 0.762);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 80px;
+    text-align: center;
 }
 
+.additionalInfoSection a > button:hover {
+background-color: rgb(201, 230, 255);
+box-shadow: var(--shadow);
+}
