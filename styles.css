@@ -7,7 +7,6 @@
 
 /*General styles*/
 * {
-    margin: 15px;
     text-align: start;
     color: rgb(32, 14, 1);
     font-family: var(--main-font);
@@ -21,10 +20,14 @@ body {
 h2 {
     max-width: fit-content;
     padding: 10px;
-    background-color: rgb(19, 19, 19) ;
+    background-color: rgb(19, 19, 19);
     font-size: 32px;
     color: var(--default-color);
-    }
+}
+
+h3 {
+    font-size: 24px;
+}
 
 p {
     font-size: 18px;
@@ -38,12 +41,15 @@ p {
     display: flex;
     align-items: center;
     background-color: rgba(0, 174, 238, 0.762);
+    padding: 25px;
+    border: 1px solid  rgb(0, 139, 190);
 }
 
 .primaryContent img {
     max-width: 250px;
     transition: var(--transition);
     box-shadow: var(--shadow);
+    border: 1px solid rgb(19, 19, 19);
 }
 
 .primaryContent img:hover {
@@ -54,10 +60,12 @@ p {
     font-size: 62px;
     font-family: var(--main-font);
     text-align: start;
+    -webkit-text-stroke: 1px  rgb(1, 74, 100);
 }
 
 .primaryContent h1, .primaryContent h1 + p {
     color: var(--default-color);
+    margin: 32px;
 }
 
 .contactInfo li, .hardSkillsSection li, .languageProficiency li, .softSkillsSection li{
@@ -83,8 +91,8 @@ p {
     justify-content: space-between;
 }
 
-.experienceSection {
-/*add the code for experience section*/
+.experienceSection .timeline{
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .additionalInfoSection {
