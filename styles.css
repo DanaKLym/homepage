@@ -30,7 +30,7 @@ p {
     font-size: 18px;
 }
 
-.photoAndName, .contactInfo, .introSection, .skillsSection {
+.photoAndName, .contactInfo, .introSection, .skillsAndLanguages {
     margin-bottom: 50px;
 }
 
@@ -60,7 +60,7 @@ p {
     color: var(--default-color);
 }
 
-.contactInfo li, .skillsSection li{
+.contactInfo li, .hardSkillsSection li, .languageProficiency li, .softSkillsSection li{
     list-style-type: "\1F343";
 }
 
@@ -78,6 +78,10 @@ p {
     color: rgb(255, 199, 18);
 }
 
+.skillsAndLanguages {
+    display: flex;
+    justify-content: space-between;
+}
 
 .experienceSection {
 /*add the code for experience section*/
