@@ -1,21 +1,84 @@
+:root {
+    --main-font: Helvetica, sans-serif;
+    --transition: all 350ms ease-in-out;
+    --shadow: 2px 2px 3px rgba(0, 0, 0, 0.189);
+    --default-color:  rgb(254, 252, 249);
+}
+
 /*General styles*/
 * {
     margin: 15px;
     text-align: start;
     color: rgb(32, 14, 1);
+    font-family: var(--main-font);
 }
 
 body {
-    background-color: rgba(255, 235, 205, 0.282);
+    background-color: var(--default-color);
+    margin: 30px;
 }
 
-.contactInfo {
-/*Add the code for contact info*/
+h2 {
+    max-width: fit-content;
+    padding: 10px;
+    background-color: rgb(19, 19, 19) ;
+    font-size: 32px;
+    color: var(--default-color);
+    }
+
+p {
+    font-size: 18px;
+}
+.photoAndName {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 174, 238, 0.762);
 }
 
-.introAndSkillsSection {
-    /*add the code for intro and skills section*/
+.primaryContent img {
+    max-width: 250px;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
 }
+
+.primaryContent img:hover {
+    transform: scale(1.1);
+}
+
+.primaryContent h1 {
+    font-size: 62px;
+    font-family: var(--main-font);
+    text-align: start;
+}
+
+.primaryContent h1, .primaryContent h1 + p {
+    color: var(--default-color);
+}
+
+.contactInfo li{
+    list-style-type: "\1F343";
+}
+
+.contactInfo a {
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 18px;
+}
+
+.contactInfo a:hover {
+    text-shadow: var(--shadow);
+}
+
+.contactInfo a:active {
+    color: rgb(255, 199, 18);
+}
+
+
+.introSection {
+   
+}
+
+.skillsSection
 
 .experienceSection {
 /*add the code for experience section*/
@@ -24,3 +87,4 @@ body {
 .additionalInfoSection {
     /*code for additional info section*/
 }
+
