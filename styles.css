@@ -1,0 +1,136 @@
+:root {
+    --main-font: Helvetica, sans-serif;
+    --transition: all 350ms ease-in-out;
+    --shadow: 2px 2px 3px rgba(0, 0, 0, 0.189);
+    --default-color:  rgb(254, 252, 249);
+}
+
+/*General styles*/
+* {
+    text-align: start;
+    color: rgb(32, 14, 1);
+    font-family: var(--main-font);
+}
+
+body {
+    background-color: var(--default-color);
+    margin: 30px;
+}
+
+h2 {
+    max-width: fit-content;
+    padding: 10px;
+    background-color: rgba(19, 19, 19, 0.85);
+    font-size: 32px;
+    color: var(--default-color);
+}
+
+h3 {
+    font-size: 24px;
+    background-color:  rgba(0, 174, 238, 0.379);
+    width: fit-content;
+    padding: 5px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.photoAndName, .contactInfo, .introSection, .skillsAndLanguages, .experienceSection, .primaryExperience {
+    margin-bottom: 50px;
+}
+
+.photoAndName {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 174, 238, 0.762);
+    padding: 25px;
+    border: 1px solid  rgb(0, 139, 190);
+}
+
+.primaryContent img {
+    max-width: 250px;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    border: 1px solid rgb(19, 19, 19);
+}
+
+.primaryContent img:hover {
+    transform: scale(1.1);
+}
+
+.primaryContent h1 {
+    font-size: 62px;
+    font-family: var(--main-font);
+    text-align: start;
+    -webkit-text-stroke: 1px  rgb(1, 74, 100);
+}
+
+.primaryContent h1, .primaryContent h1 + p {
+    color: var(--default-color);
+    margin: 32px;
+}
+
+.contactInfo li, .hardSkillsSection li, .languageProficiency li, .softSkillsSection li, .certificates{
+    list-style-type: "\1F343";
+}
+
+.contactInfo a {
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 18px;
+}
+
+.contactInfo a:hover {
+    text-shadow: var(--shadow);
+}
+
+.contactInfo a:active {
+    color: rgb(255, 199, 18);
+}
+
+.skillsAndLanguages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experienceSection .timeline{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.certificates  a{
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.certificates  a:hover {
+    text-shadow: var(--shadow);
+}
+
+.additionalInfoSection a > button {
+    font-size: 34px;
+    background-color: rgb(240, 248, 255);
+    border: 1px solid rgba(0, 174, 238, 0.762);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 80px;
+    text-align: center;
+}
+
+.additionalInfoSection a > button:hover {
+background-color: rgb(201, 230, 255);
+box-shadow: var(--shadow);
+}
+
+footer {
+    background-color:  rgba(0, 174, 238, 0.762);
+    padding: 5px;
+    border: 1px solid  rgb(0, 139, 190);
+}
+
+footer p {
+    text-align: center;
+    color: var(--default-color);
+    font-weight: 700;
+}
