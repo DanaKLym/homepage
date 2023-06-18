@@ -36,7 +36,7 @@ p {
     font-size: 18px;
 }
 
-.photoAndName, .contactInfo, .introSection, .skillsAndLanguages {
+.photoAndName, .contactInfo, .introSection, .skillsAndLanguages, .experienceSection, .primaryExperience {
     margin-bottom: 50px;
 }
 
@@ -121,4 +121,16 @@ p {
 .additionalInfoSection a > button:hover {
 background-color: rgb(201, 230, 255);
 box-shadow: var(--shadow);
+}
+
+footer {
+    background-color:  rgba(0, 174, 238, 0.762);
+    padding: 5px;
+    border: 1px solid  rgb(0, 139, 190);
+}
+
+footer p {
+    text-align: center;
+    color: var(--default-color);
+    font-weight: 700;
 }
